@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.daen {
+  background-color: white;
+  box-shadow: 0 0 8px white;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(135deg) skew(20deg, 20deg);
+  z-index: 1;
+}
+
+.diamond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(135deg) skew(20deg, 20deg);
+  background-color: white;
+  box-shadow: 0 0 8px white;
+  width: 705px;
+  height: 705px;
+  z-index: 2;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 430px;
+  width: 430px;
+  background-color: white;
+  box-shadow: 0 0 5px white;
+  z-index: 3;
+}
+
+.circle.two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 430px;
+  width: 430px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 5px white;
+  z-index: 4;
+}
+
+.box.two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 0 5px white;
+  z-index: 5;
+}
+
+.circle.three {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 6;
+}
+
+.box.three {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 210px;
+  width: 210px;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 7;
+}
+
+.circle.four {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 8;
+}
+
+.box.four {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 145px;
+  width: 145px;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 9;
+}
+
+.circle.five {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 10;
+}
+
+.box.five {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 11;
+}
+
+.circle.six {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 12;
+}
+
+.box.six {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 13;
+}
+
+.circle.seven {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  z-index: 14;
+}
+
+#colorPicker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.container {
+  position: absolute;
+  z-index: 31;
+}
+
+.ball {
+  position: absolute;
+  height: 85px;
+  width: 85px;
+  border-radius: 100px;
+  transition: transform 2s ease;
+}
+
+.ball:hover {
+  transform: scale(1.2) translateY(-10px) rotate(10deg);
+}
+
+.inner {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  border-radius: 100px;
+  box-shadow: 0 0 20px aliceblue;
+}
+
+.ball:hover .inner {
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px skyblue;
+}
+
+#colortext {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 0 10px white;
+  padding: 0 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(83, 77, 78);
+  z-index: 21;
+}
+#colortext2 {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 0 10px white;
+  padding: 0 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(83, 77, 78);
+  z-index: 21;
+}
